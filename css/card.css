@@ -19,7 +19,12 @@
     position: relative;
 }
 
+
 .card-content{
+    padding: 25px;
+}
+
+.card-price{
     padding: 25px;
 }
 
