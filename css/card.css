@@ -1,17 +1,22 @@
-.card{
-    width: 340px;
+.cards-container {
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 300px;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    margin-bottom: 50px;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-10px);
 }
 
-.card-image{
+.card-image-ticket {
     height: 200px;
     background-image: url(../assets/img01.png);
     background-size: cover;
@@ -19,21 +24,62 @@
     position: relative;
 }
 
-.card-detail{
+.card-image-package {
+    height: 200px;
+    background-image: url(../assets/img03.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.linha {
+    position: relative;
+}
+
+.linha card-detail-save{
+    margin: 24px 0;
+}
+
+.card-points{
+    display: flex;
+}
+
+.card-points span{
+    display: block;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.linha hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0;
+}
+
+.card-detail {
     background-color: #e1e1e1;
     width: 30%;
     border-radius: 5px;
 }
 
-.card-price-currency{
+.card-detail-save {
+    background-color: #e6fbf4;
+    width: 50%;
+    border-radius: 5px;
+    display: flex;
+    left: 25px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    padding: 4px 12px;
+    font-weight: bold;
+    color: #10b981;
     font-size: 14px;
 }
 
-.card-price-amout{
-    font-size: 24px;
-}
-
-.card-detail span{
+.card-detail-save span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,15 +87,31 @@
     padding: 2px;
 }
 
-.card-content{
-    padding: 25px;
+.card-price-currency {
+    font-size: 14px;
 }
 
-.card-price{
-    padding-top: 10px;
+.card-price-amout {
+    font-size: 24px;
 }
 
-.card-title{
+.card-detail span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    padding: 2px;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-price {
+    padding-top: 30px;
+}
+
+.card-title {
     display: flex;
     color: #1e1f22;
     font-size: 1.4rem;
@@ -58,20 +120,20 @@
     text-decoration: none;
 }
 
-.card-description{
+.card-description {
     color: #424549;
     font-size: 0.95rem;
     line-height: 1.5;
     margin-bottom: 5px;
 }
 
-.card-product{
+.card-product {
     color: #424549;
     font-size: 12px;
 }
 
 
-.card-detail-icon{
+.card-detail-icon {
     margin-right: 5px;
     width: 18px;
     height: 18px;
